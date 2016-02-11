@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-storesdk",
+  "version": "0.0.1",
+  "description": "Store sdk plugin",
+  "cordova": {
+    "id": "cordova-plugin-barcodescanner",
+    "platforms": [
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitg7/cordova-plugin-storesdk.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-windows"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Rohit Gupta",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/rohitg7/cordova-plugin-storesdk/issues"
+  },
+  "homepage": "https://github.com/rohitg7/cordova-plugin-storesdk#readme"
+}

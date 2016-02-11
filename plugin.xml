@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (c) Microsoft Open Technologies, Inc.  All Rights Reserved.
+ Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
+-->
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-storesdk"
+      version="0.0.1">
+    <name>Store SDK plugin</name>
+
+    <description>Store SDK Plugin for Apache Cordova</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, storesdk, db, database</keywords>
+    <repo>https://github.com/rohitg7/cordova-plugin-storesdk/</repo>
+    <issue>https://github.com/rohitg7/cordova-plugin-storesdk/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/storesdkplugin.js" name="StoreSdkPlugin">
+        <clobbers target="StoreSdkPlugin" />
+    </js-module>
+
+    <platform name="windows">
+        <js-module src="src/windows/StoreSdkProxy.js" name="StoreSdkProxy">
+            <merges target="" />
+        </js-module>
+
+        <framework src="src/windows/lib.UW/x86/StoreSdk.Proxy.winmd" target-dir="x86" arch="x86" custom="true" versions=">8.1" />
+        <framework src="src/windows/lib.UW/x64/StoreSdk.Proxy.winmd" target-dir="x64" arch="x64" custom="true" versions=">8.1" />
+        <framework src="src/windows/lib.UW/ARM/StoreSdk.Proxy.winmd" target-dir="ARM" arch="ARM" custom="true" versions=">8.1" />
+    </platform>
+</plugin>
