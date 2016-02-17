@@ -6,12 +6,12 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android"
            id="cordova-plugin-storesdk"
-      version="0.0.1">
+      version="0.0.3">
     <name>Store SDK plugin</name>
 
     <description>Store SDK Plugin for Apache Cordova</description>
     <license>Apache 2.0</license>
-    <keywords>cordova, storesdk, db, database</keywords>
+    <keywords>cordova, storesdk</keywords>
     <repo>https://github.com/rohitg7/cordova-plugin-storesdk/</repo>
     <issue>https://github.com/rohitg7/cordova-plugin-storesdk/issues</issue>
 
@@ -27,9 +27,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <js-module src="src/windows/StoreSdkProxy.js" name="StoreSdkProxy">
             <merges target="" />
         </js-module>
-
-        <framework src="src/windows/lib.UW/x86/StoreSdk.Proxy.winmd" target-dir="x86" arch="x86" custom="true" versions=">8.1" />
-        <framework src="src/windows/lib.UW/x64/StoreSdk.Proxy.winmd" target-dir="x64" arch="x64" custom="true" versions=">8.1" />
-        <framework src="src/windows/lib.UW/ARM/StoreSdk.Proxy.winmd" target-dir="ARM" arch="ARM" custom="true" versions=">8.1" />
+        <framework src="src/windows/lib/StoreSdk.Proxy/StoreSdk.Proxy.csproj" custom="true" type="projectReference" versions=">8.1"/>
     </platform>
 </plugin>

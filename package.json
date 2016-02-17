@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Store sdk plugin",
   "cordova": {
-    "id": "cordova-plugin-barcodescanner",
+    "id": "cordova-plugin-storesdk",
     "platforms": [
       "windows"
     ]
